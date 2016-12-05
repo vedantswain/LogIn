@@ -1,0 +1,17 @@
+apply plugin: 'android-library'
+apply from: '../maven_push.gradle'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 23
+
+    }
+}
+
+dependencies {
+    compile 'com.nineoldandroids:library:2.4.0'
+}

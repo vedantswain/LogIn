@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+    <com.LogIn.SlidingTabLayout
+          android:id="@+id/sliding_tabs"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginLeft="100px"
+            android:text="Awake"
+            android:textColor="#00DD00"
+            android:layout_weight="0"
+            android:gravity="left" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="6dp"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/gradient">
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginRight="10dp"
+            android:text="Sleepy"
+            android:layout_weight="0"
+            android:textColor="#FF0000"/>
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+          android:id="@+id/viewpager"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:background="@android:color/white"/>
+
+</LinearLayout>

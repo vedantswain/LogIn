@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="targets_sleepiness">
+        <item>@drawable/lock</item>
+        <item>@drawable/green_dot</item>
+        <item>@drawable/green_dot</item>
+        <item>@drawable/level_1</item>
+        <item>@drawable/level_2</item>
+        <item>@drawable/level_3</item>
+        <item>@drawable/level_4</item>
+        <item>@drawable/level_5</item>
+        <item>@drawable/level_6</item>
+        <item>@drawable/level_7</item>
+        <item>@drawable/green_dot</item>
+        <item>@drawable/green_dot</item>
+    </array>
+    <array name="targets_depression">
+        <item>@drawable/lock</item>
+        <item>@drawable/green_dot</item>
+        <item>@drawable/level_1</item>
+        <item>@drawable/level_2</item>
+        <item>@drawable/level_3</item>
+        <item>@drawable/level_4</item>
+        <item>@drawable/level_5</item>
+        <item>@drawable/green_dot</item>
+    </array>
+    <array name="targets_mood">
+        <item>@drawable/lock</item>
+        <item>@drawable/grid_icon</item>
+    </array>
+    <array name="targets_sleepiness_input">
+        <item>@drawable/green_dot</item>
+        <item>@drawable/green_dot</item>
+        <item>@drawable/green_dot</item>
+        <item>@drawable/level_1</item>
+        <item>@drawable/level_2</item>
+        <item>@drawable/level_3</item>
+        <item>@drawable/level_4</item>
+        <item>@drawable/level_5</item>
+        <item>@drawable/level_6</item>
+        <item>@drawable/level_7</item>
+        <item>@drawable/green_dot</item>
+        <item>@drawable/green_dot</item>
+    </array>
+    <array name="targets_depression_input">
+        <item>@drawable/green_dot</item>
+        <item>@drawable/green_dot</item>
+        <item>@drawable/level_1</item>
+        <item>@drawable/level_2</item>
+        <item>@drawable/level_3</item>
+        <item>@drawable/level_4</item>
+        <item>@drawable/level_5</item>
+        <item>@drawable/green_dot</item>
+    </array>
+    <array name="targets_mood_input">
+        <item>@drawable/green_dot</item>
+        <item>@drawable/grid_icon</item>
+    </array>
+
+    <string-array name="listArray">
+        <item>Sleepiness</item>
+        <item>Depression</item>
+        <item>Mood</item>
+    </string-array>
+
+    <string-array name="listValues">
+        <item>Sleepiness</item>
+        <item>Depression</item>
+        <item>Mood</item>
+    </string-array>
+
+    <string-array name="list_condition_description">
+        <item>Original Lockscreen,\nNo Notification</item>
+        <item>Original Lockscreen,\nNotification without Sound</item>
+        <item>Original Lockscreen,\nNotification with Sound</item>
+        <item>LogIn Lockscreen,\nNo Notification</item>
+        <item>LogIn Lockscreen,\nNotification without Sound</item>
+        <item>LogIn Lockscreen,\nNotification with Sound</item>
+    </string-array>
+
+    <string-array name="list_condition_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+
+</resources>

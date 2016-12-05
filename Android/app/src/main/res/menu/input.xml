@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    <item android:id="@+id/action_visualization"
+        android:icon="@drawable/viz_icon"
+        android:title="Data"
+        android:showAsAction="ifRoom" />
+    <item android:id="@+id/action_settings"
+        android:icon="@drawable/setting_icon"
+        android:title="Setting"
+        android:showAsAction="ifRoom" />
+</menu>
