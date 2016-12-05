@@ -20,7 +20,7 @@
         android:icon="@drawable/ic_launcher">
 
         <activity
-            android:name=".MainActivity"
+            android:name=".App.MainActivity"
             android:launchMode="singleInstance">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,22 +30,22 @@
         </activity>
 
         <activity
-            android:name=".MainActivityLaunchByNotification">
+            android:name=".App.MainActivityLaunchByNotification">
         </activity>
 
         <!-- A child of the main activity -->
         <activity
-            android:name=".Setting"
+            android:name=".App.Setting"
             android:label="Setting"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".App.MainActivity" >
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".App.MainActivity" />
         </activity>
 
         <activity
-            android:name=".Visualization"
+            android:name=".App.Visualization"
             android:launchMode="singleInstance"
             android:label="LogIn-Result">
             <intent-filter>
@@ -55,21 +55,21 @@
         </activity>
 
         <activity
-            android:name=".LockscreenSleepiness"
+            android:name=".Lockscreen.LockscreenSleepiness"
             android:launchMode="singleInstance"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:screenOrientation="portrait">
         </activity>
 
         <activity
-            android:name=".LockscreenDepression"
+            android:name=".Lockscreen.LockscreenDepression"
             android:launchMode="singleInstance"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:screenOrientation="portrait">
         </activity>
 
         <activity
-            android:name=".LockscreenMood"
+            android:name=".Lockscreen.LockscreenMood"
             android:launchMode="singleInstance"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:screenOrientation="portrait">
@@ -79,7 +79,7 @@
             android:name=".RateAlert">
         </activity>
 
-        <service android:name=".LockscreenService" >
+        <service android:name=".Lockscreen.LockscreenService" >
         </service>
 
         <receiver

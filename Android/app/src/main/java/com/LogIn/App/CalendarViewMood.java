@@ -1,4 +1,4 @@
-package com.LogIn;
+package com.LogIn.App;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -12,6 +12,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ScrollView;
 
+import com.LogIn.Utility;
 import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseObject;
@@ -21,7 +22,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-public class CalendarViewSleepiness extends View {
+public class CalendarViewMood extends View {
     private ShapeDrawable mDrawable;
     private int index_day;
     private List<ParseObject> m_valueList;
@@ -34,12 +35,12 @@ public class CalendarViewSleepiness extends View {
         m_valueList = Utility.getDataFromParse();
     }
 
-    public CalendarViewSleepiness(Context context) {
+    public CalendarViewMood(Context context) {
         super(context);
         init();
     }
 
-    public CalendarViewSleepiness(Context context, AttributeSet attrs)
+    public CalendarViewMood(Context context, AttributeSet attrs)
     {
         super(context, attrs);
         init();
@@ -48,7 +49,6 @@ public class CalendarViewSleepiness extends View {
     public void setPageIndex(int position) {
         index_day = position;
     }
-
 
     @Override
     public void onDraw(Canvas canvas) {
@@ -68,20 +68,45 @@ public class CalendarViewSleepiness extends View {
         int rect_height = 10;
 
         paint.setAntiAlias(true);
+
+        paint.setColor(Color.GRAY);
+        canvas.drawLine((width - text_width) / 4, hour_vertical_interval, (width - text_width) / 4, hour_vertical_interval * (Utility.num_hour_experiment_length + 1), paint);
+        canvas.drawLine(width - (width - text_width) / 4, hour_vertical_interval, width -(width - text_width) / 4, hour_vertical_interval*(Utility.num_hour_experiment_length+1), paint);
+        paint.setColor(Color.BLACK);
+
         for (int i = Utility.hour_start; i <= Utility.hour_start + Utility.num_hour_experiment_length; i++) {
             int y = (i - Utility.hour_start + 1) * hour_vertical_interval;
-            canvas.drawText(i + ":00", 10, y + textSize / 2, paint);
-            canvas.drawLine(text_width, y, width, y, paint);
+            canvas.drawText(i + ":00", 10 + (width - text_width)/2, y + textSize / 2, paint);
+            canvas.drawLine(0, y, (width - text_width)/2, y, paint);
+            canvas.drawLine((width + text_width)/2, y, width, y, paint);
         }
 
         if (m_valueList != null) {
             int lastY = 0;
             for (ParseObject object : m_valueList) {
-                int value = object.getInt("sleepiness_value");
-                // Make sure we don't count normal unlock
-                if (value >=1 && value <=7) {
-                    int startX = text_width;
-                    int endX = startX + value * (width - text_width) / 7;
+                int negative_positive = object.getInt("mood_negative_positive");
+                System.out.println(negative_positive);
+                int low_high = object.getInt("mood_low_high");
+                if (negative_positive != -9999 && negative_positive != 0) {
+                    int startX_negative_positive;
+                    int endX_negative_positive;
+                    if (negative_positive < 0) {
+                        endX_negative_positive = (width - text_width) / 4;
+                        startX_negative_positive = endX_negative_positive + negative_positive * (width - text_width) / 20;
+                    } else {
+                        startX_negative_positive = (width - text_width) / 4;
+                        endX_negative_positive = startX_negative_positive + negative_positive * (width - text_width) / 20;
+                    }
+
+                    int startX_low_high;
+                    int endX_low_high;
+                    if (low_high < 0) {
+                        endX_low_high = (width + text_width) / 2 + (width - text_width) / 4;
+                        startX_low_high = endX_low_high + low_high * (width - text_width) / 20;
+                    } else {
+                        startX_low_high = (width + text_width) / 2 + (width - text_width) / 4;
+                        endX_low_high = startX_low_high + low_high * (width - text_width) / 20;
+                    }
 
                     Date time = object.getDate("time");
                     Calendar cal = Calendar.getInstance();
@@ -99,9 +124,12 @@ public class CalendarViewSleepiness extends View {
                         if (startY < lastY + rect_height) {
                             startY = lastY + rect_height;
                         }
-                        paint.setColor(Utility.convertSleepinessValueToColor(value));
-                        RectF rf = new RectF(startX, startY, endX, startY + rect_height);
-                        canvas.drawRect(rf, paint);
+                        paint.setColor(Utility.convertMoodValueToColor(negative_positive));
+                        RectF negative_positive_rect = new RectF(startX_negative_positive, startY, endX_negative_positive, startY + rect_height);
+                        canvas.drawRect(negative_positive_rect, paint);
+                        paint.setColor(Utility.convertMoodValueToColor(low_high));
+                        RectF low_high_rect = new RectF(startX_low_high, startY, endX_low_high, startY + rect_height);
+                        canvas.drawRect(low_high_rect, paint);
                         lastY = startY;
                     }
                 }

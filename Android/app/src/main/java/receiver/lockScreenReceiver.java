@@ -6,10 +6,10 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
-import com.LogIn.LockscreenDepression;
-import com.LogIn.LockscreenMood;
-import com.LogIn.LockscreenSleepiness;
-import com.LogIn.MainActivity;
+import com.LogIn.Lockscreen.LockscreenDepression;
+import com.LogIn.Lockscreen.LockscreenMood;
+import com.LogIn.Lockscreen.LockscreenSleepiness;
+import com.LogIn.App.MainActivity;
 import com.LogIn.Utility;
 
 public class lockScreenReceiver extends BroadcastReceiver  {

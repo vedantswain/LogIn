@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.LogIn.CalendarViewSleepiness
+            <com.LogIn.App.CalendarViewSleepiness
                 android:layout_width="match_parent"
                 android:layout_height="4000px"
                 android:id="@+id/CalendarViewSleepiness" />

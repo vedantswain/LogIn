@@ -14,15 +14,17 @@
 * limitations under the License.
 */
 
-package com.LogIn;
+package com.LogIn.App;
 
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
-import android.view.ViewGroup;
 import android.view.Window;
+
+import com.LogIn.R;
+import com.LogIn.Utility;
 
 
 public class Visualization extends FragmentActivity {

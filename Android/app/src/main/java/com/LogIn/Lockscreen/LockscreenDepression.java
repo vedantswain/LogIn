@@ -1,27 +1,24 @@
-package com.LogIn;
+package com.LogIn.Lockscreen;
 
-import android.app.Activity;
 import android.app.WallpaperManager;
-import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.view.MotionEvent;
 import android.view.View;
-import android.view.WindowManager;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.LogIn.R;
+import com.LogIn.Utility;
+
 import net.frakbot.glowpadbackport.GlowPadView;
 
-public class LockscreenSleepiness extends Lockscreen {
+public class LockscreenDepression extends Lockscreen {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.lockscreen_sleepiness);
+        setContentView(R.layout.lockscreen_depression);
         // Use user desktop wallpaper in lockscreen
-        RelativeLayout ll = (RelativeLayout) findViewById(R.id.lockscreen_sleepiness_main);
+        RelativeLayout ll = (RelativeLayout) findViewById(R.id.lockscreen_depression_main);
         ll.setBackground(WallpaperManager.getInstance(this).getFastDrawable());
 
         final GlowPadView glowPad = (GlowPadView) findViewById(R.id.incomingCallWidget);
@@ -39,7 +36,11 @@ public class LockscreenSleepiness extends Lockscreen {
 
             @Override
             public void onTrigger(View v, int target) {
-                Utility.sleepinessWriteToParse("lockscreen", target - 2);
+                String type = "Accomplishment";
+                if (glowPad.mhandle == 0) {
+                    type = "Pleasure";
+                }
+                Utility.depressionWriteToParse("lockscreen", type, target - 1);
                 glowPad.reset(true);
                 v.setVisibility(View.GONE);
                 finish();
@@ -56,8 +57,14 @@ public class LockscreenSleepiness extends Lockscreen {
             @Override
             public void onMovedOnTarget(int target) {
                 final TextView txt = (TextView) findViewById(R.id.textView);
-                String sleepiness_description = Utility.convertSleepinessValueToDescription(target - 2);
-                txt.setText(sleepiness_description);
+                String depression_description;
+
+                if (glowPad.mhandle == 0) {
+                    depression_description = Utility.convertScaleValueToAdv(target - 1) + " Pleasure";
+                } else {
+                    depression_description = Utility.convertScaleValueToAdv(target - 1) + " Accomplishment";
+                }
+                txt.setText(depression_description);
             }
         });
     }

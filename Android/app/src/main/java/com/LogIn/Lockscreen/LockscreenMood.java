@@ -1,17 +1,16 @@
-package com.LogIn;
+package com.LogIn.Lockscreen;
 
-import android.app.Activity;
 import android.app.WallpaperManager;
-import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.LogIn.R;
+import com.LogIn.Utility;
+
 import net.frakbot.glowpadbackport.GlowPadView;
 
 public class LockscreenMood extends Lockscreen {

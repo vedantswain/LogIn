@@ -1,8 +1,10 @@
-package com.LogIn;
+package com.LogIn.App;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+
+import com.LogIn.Utility;
 
 public class MainActivityLaunchByNotification extends Activity {
     @Override

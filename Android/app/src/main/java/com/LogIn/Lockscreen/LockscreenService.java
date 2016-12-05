@@ -1,4 +1,4 @@
-package com.LogIn;
+package com.LogIn.Lockscreen;
 
 import receiver.lockScreenReceiver;
 
@@ -8,6 +8,8 @@ import android.content.BroadcastReceiver;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.IBinder;
+
+import com.LogIn.Utility;
 
 public class LockscreenService extends Service{
     BroadcastReceiver mReceiver;

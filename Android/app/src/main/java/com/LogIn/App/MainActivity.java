@@ -14,14 +14,10 @@
 * limitations under the License.
 */
 
-package com.LogIn;
+package com.LogIn.App;
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.media.AudioManager;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -29,6 +25,14 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.LogIn.AlarmReceiverNotification;
+import com.LogIn.AlarmReceiverRating;
+import com.LogIn.App.Setting;
+import com.LogIn.App.Visualization;
+import com.LogIn.Lockscreen.LockscreenService;
+import com.LogIn.R;
+import com.LogIn.Utility;
 
 import net.frakbot.glowpadbackport.GlowPadView;
 

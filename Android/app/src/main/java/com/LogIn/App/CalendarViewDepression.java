@@ -1,4 +1,4 @@
-package com.LogIn;
+package com.LogIn.App;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -12,6 +12,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ScrollView;
 
+import com.LogIn.Utility;
 import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseObject;

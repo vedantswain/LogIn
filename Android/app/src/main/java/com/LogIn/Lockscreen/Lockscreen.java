@@ -1,4 +1,4 @@
-package com.LogIn;
+package com.LogIn.Lockscreen;
 
 import android.app.Activity;
 import android.os.Bundle;

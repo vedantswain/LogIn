@@ -1,10 +1,14 @@
-package com.LogIn;
+package com.LogIn.App;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
+
+import com.LogIn.AlarmReceiverRating;
+import com.LogIn.R;
+import com.LogIn.Utility;
 
 public class Setting extends PreferenceActivity implements SharedPreferences.OnSharedPreferenceChangeListener {
 

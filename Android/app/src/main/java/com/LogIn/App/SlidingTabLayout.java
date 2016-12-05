@@ -1,4 +1,4 @@
-package com.LogIn;
+package com.LogIn.App;
 
 import android.content.Context;
 import android.graphics.Typeface;
