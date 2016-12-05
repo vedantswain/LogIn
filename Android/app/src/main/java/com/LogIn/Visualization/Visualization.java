@@ -14,7 +14,7 @@
 * limitations under the License.
 */
 
-package com.LogIn.App;
+package com.LogIn.Visualization;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -24,7 +24,7 @@ import android.support.v4.view.ViewPager;
 import android.view.Window;
 
 import com.LogIn.R;
-import com.LogIn.Utility;
+import com.LogIn.Misc.Utility;
 
 
 public class Visualization extends FragmentActivity {

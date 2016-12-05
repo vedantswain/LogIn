@@ -26,13 +26,12 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.LogIn.AlarmReceiverNotification;
-import com.LogIn.AlarmReceiverRating;
-import com.LogIn.App.Setting;
-import com.LogIn.App.Visualization;
+import com.LogIn.Receiver.AlarmReceiverNotification;
+import com.LogIn.Receiver.AlarmReceiverRating;
+import com.LogIn.Visualization.Visualization;
 import com.LogIn.Lockscreen.LockscreenService;
 import com.LogIn.R;
-import com.LogIn.Utility;
+import com.LogIn.Misc.Utility;
 
 import net.frakbot.glowpadbackport.GlowPadView;
 

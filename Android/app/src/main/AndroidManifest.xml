@@ -15,7 +15,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name=".LogInApp"
+        android:name=".Misc.LogInApp"
         android:label="LogIn"
         android:icon="@drawable/ic_launcher">
 
@@ -45,7 +45,7 @@
         </activity>
 
         <activity
-            android:name=".App.Visualization"
+            android:name=".Visualization.Visualization"
             android:launchMode="singleInstance"
             android:label="LogIn-Result">
             <intent-filter>
@@ -76,7 +76,7 @@
         </activity>
 
         <activity
-            android:name=".RateAlert">
+            android:name=".Misc.RateAlert">
         </activity>
 
         <service android:name=".Lockscreen.LockscreenService" >
@@ -84,14 +84,14 @@
 
         <receiver
             android:enabled="true"
-            android:name="receiver.lockScreenReceiver" >
+            android:name=".Receiver.LockScreenReceiver" >
             <intent-filter >
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".AlarmReceiverRating"></receiver>
-        <receiver android:name=".AlarmReceiverNotification"></receiver>
+        <receiver android:name=".Receiver.AlarmReceiverRating"></receiver>
+        <receiver android:name=".Receiver.AlarmReceiverNotification"></receiver>
 
     </application>
 

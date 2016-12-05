@@ -2,13 +2,6 @@
 <items version="2" >
 
     <item
-        jar="/Users/stevezhanggeek/Desktop/LogIn/Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
-        <dex dex="/Users/stevezhanggeek/Desktop/LogIn/Android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-21.0.2_8f5679fbda4f3c04fad9955748b1ac40dcd0d832.jar" />
-    </item>
-    <item
         jar="/Users/stevezhanggeek/Desktop/LogIn/Android/app/libs/Parse-1.9.1.jar"
         jumboMode="false"
         revision="23.0.2"
@@ -16,25 +9,11 @@
         <dex dex="/Users/stevezhanggeek/Desktop/LogIn/Android/app/build/intermediates/pre-dexed/debug/Parse-1.9.1_3c5c6b57a5bb7657f7cb5485c1eaaaeb313a8e80.jar" />
     </item>
     <item
-        jar="/Users/stevezhanggeek/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jar="/Users/stevezhanggeek/Desktop/LogIn/Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/jars/classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
-        <dex dex="/Users/stevezhanggeek/Desktop/LogIn/Android/app/build/intermediates/pre-dexed/debug/library-2.4.0_8615f9eb3b6b8e7fff91298dec7a4d1c30c6466d.jar" />
-    </item>
-    <item
-        jar="/Users/stevezhanggeek/Desktop/LogIn/Android/app/build/intermediates/exploded-aar/Android/GlowPadBackport/unspecified/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="35751ad98e90836bb3b876517f7274bad39a2be0">
-        <dex dex="/Users/stevezhanggeek/Desktop/LogIn/Android/app/build/intermediates/pre-dexed/debug/Android-GlowPadBackport-unspecified_ed2d19d33c36142fa2e167e9d328c56cf3158e89.jar" />
-    </item>
-    <item
-        jar="/Users/stevezhanggeek/Desktop/LogIn/Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/jars/libs/internal_impl-21.0.2.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
-        <dex dex="/Users/stevezhanggeek/Desktop/LogIn/Android/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.2_4643b9644169e8c8508843f64ca2b8f1fcb0254c.jar" />
+        sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
+        <dex dex="/Users/stevezhanggeek/Desktop/LogIn/Android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-21.0.2_8f5679fbda4f3c04fad9955748b1ac40dcd0d832.jar" />
     </item>
     <item
         jar="/Users/stevezhanggeek/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.2/support-annotations-21.0.2.jar"
@@ -44,11 +23,32 @@
         <dex dex="/Users/stevezhanggeek/Desktop/LogIn/Android/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.2_ab448bdd830dc16ea75f30cf0cb353475b68ae57.jar" />
     </item>
     <item
+        jar="/Users/stevezhanggeek/Desktop/LogIn/Android/app/build/intermediates/exploded-aar/Android/GlowPadBackport/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="35751ad98e90836bb3b876517f7274bad39a2be0">
+        <dex dex="/Users/stevezhanggeek/Desktop/LogIn/Android/app/build/intermediates/pre-dexed/debug/Android-GlowPadBackport-unspecified_ed2d19d33c36142fa2e167e9d328c56cf3158e89.jar" />
+    </item>
+    <item
         jar="/Users/stevezhanggeek/Desktop/LogIn/Android/app/libs/bolts-android-1.2.0.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
         <dex dex="/Users/stevezhanggeek/Desktop/LogIn/Android/app/build/intermediates/pre-dexed/debug/bolts-android-1.2.0_e897c11ce3f6fa9506b035b096360bc4f97e323d.jar" />
+    </item>
+    <item
+        jar="/Users/stevezhanggeek/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/stevezhanggeek/Desktop/LogIn/Android/app/build/intermediates/pre-dexed/debug/library-2.4.0_8615f9eb3b6b8e7fff91298dec7a4d1c30c6466d.jar" />
+    </item>
+    <item
+        jar="/Users/stevezhanggeek/Desktop/LogIn/Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/jars/libs/internal_impl-21.0.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
+        <dex dex="/Users/stevezhanggeek/Desktop/LogIn/Android/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.2_4643b9644169e8c8508843f64ca2b8f1fcb0254c.jar" />
     </item>
 
 </items>

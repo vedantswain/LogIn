@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.LogIn.App;
+package com.LogIn.Visualization;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -24,7 +24,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.LogIn.R;
-import com.LogIn.Utility;
+import com.LogIn.Misc.Utility;
 
 public class SlidingTabsBasicFragment extends Fragment {
     /**

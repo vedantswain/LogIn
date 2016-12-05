@@ -9,7 +9,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.LogIn.R;
-import com.LogIn.Utility;
+import com.LogIn.Misc.Utility;
 
 import net.frakbot.glowpadbackport.GlowPadView;
 

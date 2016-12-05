@@ -1,4 +1,4 @@
-package receiver;
+package com.LogIn.Receiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -10,9 +10,9 @@ import com.LogIn.Lockscreen.LockscreenDepression;
 import com.LogIn.Lockscreen.LockscreenMood;
 import com.LogIn.Lockscreen.LockscreenSleepiness;
 import com.LogIn.App.MainActivity;
-import com.LogIn.Utility;
+import com.LogIn.Misc.Utility;
 
-public class lockScreenReceiver extends BroadcastReceiver  {
+public class LockScreenReceiver extends BroadcastReceiver  {
     public static boolean wasScreenOn = true;
 
     @Override

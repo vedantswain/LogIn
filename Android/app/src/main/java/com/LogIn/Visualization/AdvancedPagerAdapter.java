@@ -14,18 +14,15 @@
  * limitations under the License.
  */
 
-package com.LogIn.App;
+package com.LogIn.Visualization;
 
 import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.LogIn.App.CalendarViewDepression;
-import com.LogIn.App.CalendarViewMood;
-import com.LogIn.App.CalendarViewSleepiness;
 import com.LogIn.R;
-import com.LogIn.Utility;
+import com.LogIn.Misc.Utility;
 
 import java.util.Calendar;
 

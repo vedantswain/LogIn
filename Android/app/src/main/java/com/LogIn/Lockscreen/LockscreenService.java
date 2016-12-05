@@ -1,15 +1,14 @@
 package com.LogIn.Lockscreen;
 
-import receiver.lockScreenReceiver;
+import com.LogIn.Receiver.LockScreenReceiver;
 
-import android.app.KeyguardManager;
 import android.app.Service;
 import android.content.BroadcastReceiver;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.IBinder;
 
-import com.LogIn.Utility;
+import com.LogIn.Misc.Utility;
 
 public class LockscreenService extends Service{
     BroadcastReceiver mReceiver;
@@ -25,7 +24,7 @@ public class LockscreenService extends Service{
         IntentFilter filter = new IntentFilter(Intent.ACTION_SCREEN_ON);
         filter.addAction(Intent.ACTION_SCREEN_OFF);
 
-        mReceiver = new lockScreenReceiver();
+        mReceiver = new LockScreenReceiver();
         registerReceiver(mReceiver, filter);
 
         super.onCreate();

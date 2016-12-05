@@ -1,4 +1,4 @@
-package com.LogIn;
+package com.LogIn.Receiver;
 
 import android.app.AlarmManager;
 import android.app.Notification;
@@ -11,6 +11,8 @@ import android.support.v4.app.NotificationCompat;
 import android.support.v4.content.WakefulBroadcastReceiver;
 
 import com.LogIn.App.MainActivityLaunchByNotification;
+import com.LogIn.Misc.Utility;
+import com.LogIn.R;
 
 import java.util.Calendar;
 

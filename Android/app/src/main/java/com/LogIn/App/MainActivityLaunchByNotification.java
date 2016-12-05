@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.LogIn.Utility;
+import com.LogIn.Misc.Utility;
 
 public class MainActivityLaunchByNotification extends Activity {
     @Override

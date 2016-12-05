@@ -1,4 +1,4 @@
-package com.LogIn;
+package com.LogIn.Misc;
 
 import android.app.Activity;
 import android.app.KeyguardManager;

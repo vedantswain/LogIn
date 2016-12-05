@@ -1,22 +1,16 @@
-package com.LogIn.App;
+package com.LogIn.Visualization;
 
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
-import android.graphics.Typeface;
 import android.graphics.drawable.ShapeDrawable;
-import android.graphics.drawable.shapes.RectShape;
 import android.util.AttributeSet;
 import android.view.View;
-import android.widget.ScrollView;
 
-import com.LogIn.Utility;
-import com.parse.FindCallback;
-import com.parse.ParseException;
+import com.LogIn.Misc.Utility;
 import com.parse.ParseObject;
-import com.parse.ParseQuery;
 
 import java.util.Calendar;
 import java.util.Date;

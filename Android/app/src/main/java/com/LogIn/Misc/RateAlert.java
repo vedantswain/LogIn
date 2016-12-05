@@ -14,7 +14,7 @@
 * limitations under the License.
 */
 
-package com.LogIn;
+package com.LogIn.Misc;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
@@ -23,6 +23,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
+
+import com.LogIn.R;
 
 import java.text.DateFormatSymbols;
 import java.util.Calendar;
