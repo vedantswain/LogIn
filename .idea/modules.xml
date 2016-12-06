@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/LogIn.iml" filepath="$PROJECT_DIR$/.idea/LogIn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android/GlowPadBackport/src/main/main.iml" filepath="$PROJECT_DIR$/Android/GlowPadBackport/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android/app/src/main/main1.iml" filepath="$PROJECT_DIR$/Android/app/src/main/main1.iml" />
     </modules>
   </component>
 </project>
