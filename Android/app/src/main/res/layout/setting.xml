@@ -13,4 +13,22 @@
             android:entries="@array/list_condition_description"
             android:entryValues="@array/list_condition_value"/>
     </PreferenceCategory>
+    <PreferenceCategory
+        android:title="LogIn Preferences"
+        android:key="pref_key_login_settings">
+        <ListPreference
+            android:key="pref_key_lockscreen_login"
+            android:summary=""
+            android:title="LogIn Type For Lockscreen"
+            android:defaultValue="2"
+            android:entries="@array/list_login_type_description"
+            android:entryValues="@array/list_login_type_value"/>
+        <ListPreference
+            android:key="pref_key_launcher_login"
+            android:summary=""
+            android:title="LogIn Type For Launcher Application"
+            android:defaultValue="4"
+            android:entries="@array/list_login_type_description"
+            android:entryValues="@array/list_login_type_value"/>
+    </PreferenceCategory>
 </PreferenceScreen>

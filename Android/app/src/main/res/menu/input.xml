@@ -6,7 +6,7 @@
         android:title="Data"
         android:showAsAction="ifRoom" />
     <item android:id="@+id/action_settings"
-        android:icon="@drawable/setting_icon"
+        android:icon="@drawable/settings_icon"
         android:title="Setting"
         android:showAsAction="ifRoom" />
 </menu>
