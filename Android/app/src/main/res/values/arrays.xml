@@ -24,6 +24,16 @@
         <item>@drawable/level_5</item>
         <item>@drawable/green_dot</item>
     </array>
+    <array name="targets_multi_question">
+        <item>@drawable/lock</item>
+        <item>@drawable/green_dot</item>
+        <item>@drawable/level_1</item>
+        <item>@drawable/level_2</item>
+        <item>@drawable/level_3</item>
+        <item>@drawable/level_4</item>
+        <item>@drawable/level_5</item>
+        <item>@drawable/green_dot</item>
+    </array>
     <array name="targets_mood">
         <item>@drawable/lock</item>
         <item>@drawable/grid_icon</item>
@@ -43,6 +53,16 @@
         <item>@drawable/green_dot</item>
     </array>
     <array name="targets_depression_input">
+        <item>@drawable/green_dot</item>
+        <item>@drawable/green_dot</item>
+        <item>@drawable/level_1</item>
+        <item>@drawable/level_2</item>
+        <item>@drawable/level_3</item>
+        <item>@drawable/level_4</item>
+        <item>@drawable/level_5</item>
+        <item>@drawable/green_dot</item>
+    </array>
+    <array name="targets_multi_question_input">
         <item>@drawable/green_dot</item>
         <item>@drawable/green_dot</item>
         <item>@drawable/level_1</item>
@@ -92,6 +112,7 @@
         <item>Parent EMA</item>
         <item>Mood</item>
         <item>Depression</item>
+        <item>Multi-Question</item>
     </string-array>
 
     <string-array name="list_login_type_value">
@@ -99,6 +120,7 @@
         <item>2</item>
         <item>3</item>
         <item>4</item>
+        <item>5</item>
     </string-array>
 
 </resources>

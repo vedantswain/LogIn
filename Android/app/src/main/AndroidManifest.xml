@@ -15,12 +15,12 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name="com.LockscreenEMA.Misc.LogInApp"
-        android:label="LogIn"
+        android:name=".Misc.LogInApp"
+        android:label="Lockscreen EMA"
         android:icon="@drawable/ic_launcher">
 
         <activity
-            android:name="com.LockscreenEMA.App.MainActivity"
+            android:name=".App.MainActivity"
             android:launchMode="singleInstance">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,22 +30,22 @@
         </activity>
 
         <activity
-            android:name="com.LockscreenEMA.App.MainActivityLaunchByNotification">
+            android:name=".App.MainActivityLaunchByNotification">
         </activity>
 
         <!-- A child of the main activity -->
         <activity
-            android:name="com.LockscreenEMA.App.Setting"
+            android:name=".App.Setting"
             android:label="Setting"
-            android:parentActivityName="com.LockscreenEMA.App.MainActivity" >
+            android:parentActivityName=".App.MainActivity" >
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.LockscreenEMA.App.MainActivity" />
+                android:value=".App.MainActivity" />
         </activity>
 
         <activity
-            android:name="com.LockscreenEMA.Visualization.Visualization"
+            android:name=".Visualization.Visualization"
             android:launchMode="singleInstance"
             android:label="LogIn-Result">
             <intent-filter>
@@ -55,50 +55,57 @@
         </activity>
 
         <activity
-            android:name="com.LockscreenEMA.Lockscreen.LockscreenSleepiness"
+            android:name=".Lockscreen.LockscreenSleepiness"
             android:launchMode="singleInstance"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:screenOrientation="portrait">
         </activity>
 
         <activity
-            android:name="com.LockscreenEMA.Lockscreen.LockscreenParentEMA"
+            android:name=".Lockscreen.LockscreenParentEMA"
             android:launchMode="singleInstance"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:screenOrientation="portrait">
         </activity>
 
         <activity
-            android:name="com.LockscreenEMA.Lockscreen.LockscreenDepression"
+            android:name=".Lockscreen.LockscreenDepression"
             android:launchMode="singleInstance"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:screenOrientation="portrait">
         </activity>
 
         <activity
-            android:name="com.LockscreenEMA.Lockscreen.LockscreenMood"
+            android:name=".Lockscreen.LockscreenMultiQuestion"
             android:launchMode="singleInstance"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:screenOrientation="portrait">
         </activity>
 
         <activity
-            android:name="com.LockscreenEMA.Misc.RateAlert">
+            android:name=".Lockscreen.LockscreenMood"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait">
         </activity>
 
-        <service android:name="com.LockscreenEMA.Lockscreen.LockscreenService" >
+        <activity
+            android:name=".Misc.RateAlert">
+        </activity>
+
+        <service android:name=".Lockscreen.LockscreenService" >
         </service>
 
         <receiver
             android:enabled="true"
-            android:name="com.LockscreenEMA.Receiver.LockScreenReceiver" >
+            android:name=".Receiver.LockScreenReceiver" >
             <intent-filter >
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
-        <receiver android:name="com.LockscreenEMA.Receiver.AlarmReceiverRating"></receiver>
-        <receiver android:name="com.LockscreenEMA.Receiver.AlarmReceiverNotification"></receiver>
+        <receiver android:name=".Receiver.AlarmReceiverRating"></receiver>
+        <receiver android:name=".Receiver.AlarmReceiverNotification"></receiver>
 
     </application>
 

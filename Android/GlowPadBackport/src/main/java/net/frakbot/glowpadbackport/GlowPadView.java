@@ -363,9 +363,12 @@ public class GlowPadView extends View {
         if (y - mHandleDrawable.getPositionY() < 0) {
             mhandle = 0;
         } else {
-            mhandle = 1;
+            if (x - mHandleDrawable.getPositionX() < 0)
+                mhandle = 1;
+            else
+                mhandle = 2;
         }
-        System.out.println("Touched" + String.valueOf(x - mHandleDrawable.getPositionX()) + String.valueOf(y - mHandleDrawable.getPositionY()));
+        System.out.println("Touched" + String.valueOf(x - mHandleDrawable.getPositionX())+" "+ String.valueOf(y - mHandleDrawable.getPositionY()));
     }
 
     private void switchToState(int state, float x, float y) {

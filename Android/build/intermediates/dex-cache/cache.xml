@@ -3,6 +3,15 @@
 
     <item
         is-multidex="false"
+        jar="/Users/vedantdasswain/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/vedantdasswain/GitRepositories/LogIn/Android/app/build/intermediates/pre-dexed/debug/library-2.4.0_0457375df26d85ed67798a6bc934ec3b861ca901.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/vedantdasswain/GitRepositories/LogIn/Android/app/libs/Parse-1.9.1.jar"
         jumboMode="false"
         optimize="true"
@@ -21,33 +30,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/vedantdasswain/GitRepositories/LogIn/Android/app/libs/bolts-android-1.2.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.2"
-        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
-        <dex dex="/Users/vedantdasswain/GitRepositories/LogIn/Android/app/build/intermediates/pre-dexed/debug/bolts-android-1.2.0_01ee4e35a1b1acaece63843f51aa6b15ca36a645.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/vedantdasswain/GitRepositories/LogIn/Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.2"
-        sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
-        <dex dex="/Users/vedantdasswain/GitRepositories/LogIn/Android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-21.0.2_bece9151699abb06b412997d40eef1fbeaaf63b5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/vedantdasswain/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.2"
-        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
-        <dex dex="/Users/vedantdasswain/GitRepositories/LogIn/Android/app/build/intermediates/pre-dexed/debug/library-2.4.0_0457375df26d85ed67798a6bc934ec3b861ca901.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/vedantdasswain/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.2/support-annotations-21.0.2.jar"
         jumboMode="false"
         optimize="true"
@@ -57,12 +39,30 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/vedantdasswain/GitRepositories/LogIn/Android/app/libs/bolts-android-1.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
+        <dex dex="/Users/vedantdasswain/GitRepositories/LogIn/Android/app/build/intermediates/pre-dexed/debug/bolts-android-1.2.0_01ee4e35a1b1acaece63843f51aa6b15ca36a645.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/vedantdasswain/GitRepositories/LogIn/Android/app/build/intermediates/exploded-aar/Android/GlowPadBackport/unspecified/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.2"
-        sha1="c7c27d29729566058800fc9d05616abcd18b19a6">
+        sha1="f0ff5054b508e59975b91f48b9914526bf8addca">
         <dex dex="/Users/vedantdasswain/GitRepositories/LogIn/Android/app/build/intermediates/pre-dexed/debug/Android-GlowPadBackport-unspecified_9cfeaecf37008be3179097a871cd52d0064e58ca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/vedantdasswain/GitRepositories/LogIn/Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
+        <dex dex="/Users/vedantdasswain/GitRepositories/LogIn/Android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-21.0.2_bece9151699abb06b412997d40eef1fbeaaf63b5.jar" />
     </item>
 
 </items>
