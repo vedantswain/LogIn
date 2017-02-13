@@ -614,6 +614,10 @@ public class GlowPadView extends View {
         return drawables;
     }
 
+    public void changeTargetBackdoor(int resourceId){
+        internalSetTargetResources(resourceId);
+    }
+
     private void internalSetTargetResources(int resourceId) {
         final ArrayList<TargetDrawable> targets = loadDrawableArray(resourceId);
         mTargetDrawables = targets;

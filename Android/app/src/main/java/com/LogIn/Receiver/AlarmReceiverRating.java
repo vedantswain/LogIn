@@ -34,7 +34,7 @@ public class AlarmReceiverRating extends WakefulBroadcastReceiver {
         calendar.set(Calendar.HOUR_OF_DAY, Utility.hour_start + Utility.num_hour_experiment_length);
         calendar.set(Calendar.MINUTE, 00);
 
-        alarmMgr.setInexactRepeating(AlarmManager.RTC_WAKEUP,
-                calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, alarmIntent);
+//        alarmMgr.setInexactRepeating(AlarmManager.RTC_WAKEUP,
+//                calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, alarmIntent);
     }
 }

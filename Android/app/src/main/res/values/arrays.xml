@@ -38,6 +38,10 @@
         <item>@drawable/lock</item>
         <item>@drawable/grid_icon</item>
     </array>
+    <array name="targets_multi_question_mid">
+        <item>@drawable/lock</item>
+        <item>@drawable/grid_icon</item>
+    </array>
     <array name="targets_sleepiness_input">
         <item>@drawable/green_dot</item>
         <item>@drawable/green_dot</item>

@@ -40,7 +40,7 @@
         android:layout_height="fill_parent"
         android:visibility="visible"
 
-        app:targetDrawables="@array/targets_multi_question"
+        app:targetDrawables="@array/targets_multi_question_mid"
         app:handleDrawable="@drawable/handle_multi_question"
         app:innerRadius="@dimen/glowpadview_inner_radius"
         app:outerRadius="@dimen/glowpadview_target_placement_radius"
@@ -50,6 +50,18 @@
         app:feedbackCount="1"
         app:glowRadius="@dimen/glowpadview_glow_radius"
         app:pointDrawable="@drawable/glow_dot"
+        android:layout_below="@+id/textView" />
+
+
+
+    <ImageView
+        android:id="@+id/mood_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/mood_grid"
         android:layout_below="@+id/textView" />
 
 </RelativeLayout>

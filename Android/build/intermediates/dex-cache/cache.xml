@@ -52,7 +52,7 @@
         jumboMode="false"
         optimize="true"
         revision="23.0.2"
-        sha1="f0ff5054b508e59975b91f48b9914526bf8addca">
+        sha1="513f9a5cff2daf764ff6703187099ebb7abc4c19">
         <dex dex="/Users/vedantdasswain/GitRepositories/LogIn/Android/app/build/intermediates/pre-dexed/debug/Android-GlowPadBackport-unspecified_9cfeaecf37008be3179097a871cd52d0064e58ca.jar" />
     </item>
     <item
